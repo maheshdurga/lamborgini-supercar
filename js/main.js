@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCustomCursor();
   initPageTransitions();
   setActiveNavLink();
+  initDriveVideoControls();
 });
 
 /* ==========================================================================
@@ -160,5 +161,31 @@ function initPageTransitions() {
         window.location.href = href;
       }, 450);
     });
+  });
+}
+
+/* ==========================================================================
+   5. DRIVE VIDEO SOUND TOGGLE CONTROLLER
+   ========================================================================== */
+function initDriveVideoControls() {
+  const video = document.getElementById('lambDriveVideo');
+  const soundBtn = document.getElementById('videoSoundBtn');
+  if (!video || !soundBtn) return;
+
+  const muteIcon = soundBtn.querySelector('.mute-icon');
+  const unmuteIcon = soundBtn.querySelector('.unmute-icon');
+  const soundText = soundBtn.querySelector('.sound-btn-text');
+
+  soundBtn.addEventListener('click', () => {
+    video.muted = !video.muted;
+    if (video.muted) {
+      if (muteIcon) muteIcon.style.display = 'inline-block';
+      if (unmuteIcon) unmuteIcon.style.display = 'none';
+      if (soundText) soundText.textContent = 'UNMUTE SOUND';
+    } else {
+      if (muteIcon) muteIcon.style.display = 'none';
+      if (unmuteIcon) unmuteIcon.style.display = 'inline-block';
+      if (soundText) soundText.textContent = 'MUTE SOUND';
+    }
   });
 }
