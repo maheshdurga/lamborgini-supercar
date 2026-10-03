@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Automobili Lamborghini - Official Luxury Automotive Commercial Website. Discover Revuelto, Temerario, Urus SE, and Huracán.">
+  <title>Automobili Lamborghini | Official Website</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">LAMBORGHINI <span>AUTOMOBILI</span></div>
+      <div class="preloader-progress-bar">
+        <div class="preloader-progress-fill"></div>
+      </div>
+      <div class="preloader-counter">00%</div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="logo.png" alt="Automobili Lamborghini Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="models.html" class="nav-link">MODELS</a>
+        <a href="performance.html" class="nav-link">PERFORMANCE</a>
+        <a href="technology.html" class="nav-link">TECHNOLOGY</a>
+        <a href="gallery.html" class="nav-link">GALLERY</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="contact.html" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contact.html" class="btn-primary">
+          CONFIGURE <span class="btn-arrow">&rarr;</span>
+        </a>
+        <div class="mobile-toggle" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">HOME</a>
+      <a href="models.html" class="mobile-nav-link">MODELS</a>
+      <a href="performance.html" class="mobile-nav-link">PERFORMANCE</a>
+      <a href="technology.html" class="mobile-nav-link">TECHNOLOGY</a>
+      <a href="gallery.html" class="mobile-nav-link">GALLERY</a>
+      <a href="about.html" class="mobile-nav-link">ABOUT</a>
+      <a href="contact.html" class="mobile-nav-link">CONTACT</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. HOME HERO SCROLL ANIMATION CONTAINER (SCRUBS 200 BANNER FRAMES) -->
+    <div class="hero-scroll-wrapper">
+      <div class="hero-sticky-container">
+        <!-- Canvas scrubbing banner-images/ezgif-frame-001.jpg to frame-200.jpg -->
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content-layer">
+          <!-- Dynamic Text Scenes -->
+          <div class="hero-scene scene-1 active">
+            <div class="hero-scene-eyebrow">THE FIRST V12 HPEV HYBRID</div>
+            <h1 class="hero-scene-title">REVUELTO</h1>
+            <div class="hero-scene-badge">1,001 CV &bull; 0-100 KM/H IN 2.5S &bull; 350 KM/H</div>
+            <p class="hero-scene-desc">
+              From now on, driving enters a new dimension. Revuelto defines a revolutionary architecture, combining a legendary V12 engine with three high-density electric motors.
+            </p>
+            <a href="models.html" class="btn-primary">DISCOVER THE REVUELTO <span class="btn-arrow">&rarr;</span></a>
+          </div>
+
+          <div class="hero-scene scene-2">
+            <div class="hero-scene-eyebrow">YOU CAN'T HIDE FROM THRILL</div>
+            <h2 class="hero-scene-title">TEMERARIO</h2>
+            <div class="hero-scene-badge">920 CV &bull; TWIN-TURBO V8 &bull; 10,000 RPM</div>
+            <p class="hero-scene-desc">
+              An unprecedented V8 twin-turbo hybrid engine capable of reaching 10,000 RPM. Unrivaled responsiveness, high-speed stability, and sound that touches the soul.
+            </p>
+            <a href="models.html" class="btn-primary">DISCOVER TEMERARIO <span class="btn-arrow">&rarr;</span></a>
+          </div>
+
+          <div class="hero-scene scene-3">
+            <div class="hero-scene-eyebrow">DARE TO LIVE MORE</div>
+            <h2 class="hero-scene-title">URUS SE</h2>
+            <div class="hero-scene-badge">800 CV &bull; PLUG-IN HYBRID &bull; 312 KM/H</div>
+            <p class="hero-scene-desc">
+              The ultimate Super SUV evolved. Combining a twin-turbo V4.0 engine with an electric motor to deliver unmatched torque, efficiency, and driving emotion.
+            </p>
+            <a href="models.html" class="btn-primary">DISCOVER URUS SE <span class="btn-arrow">&rarr;</span></a>
+          </div>
+
+          <div class="hero-scene scene-4">
+            <div class="hero-scene-eyebrow">PURE V10 ATHLETICISM</div>
+            <h2 class="hero-scene-title">HURACÁN TECNICA</h2>
+            <div class="hero-scene-badge">640 CV &bull; NA V10 &bull; REAR-WHEEL DRIVE</div>
+            <p class="hero-scene-desc">
+              Designed as a bridge between track performance and daily usability. Lightweight engineering, aerodynamic mastery, and pure atmospheric sound.
+            </p>
+            <a href="models.html" class="btn-primary">EXPLORE HURACÁN <span class="btn-arrow">&rarr;</span></a>
+          </div>
+
+          <div class="hero-scene scene-5">
+            <div class="hero-scene-eyebrow">BESPOKE INDIVIDUALITY</div>
+            <h2 class="hero-scene-title">AD PERSONAM</h2>
+            <div class="hero-scene-badge">UNLIMITED CUSTOMIZATION &bull; SANT'AGATA ATELIER</div>
+            <p class="hero-scene-desc">
+              Make your Lamborghini an unrepeatable masterpiece. Select from over 400 exclusive exterior colors, rare leathers, and forged carbon accents.
+            </p>
+            <a href="contact.html" class="btn-primary">START CUSTOMIZING <span class="btn-arrow">&rarr;</span></a>
+          </div>
+
+          <!-- Hero Controls & Counter -->
+          <div class="hero-controls">
+            <div class="hero-counter">
+              <span class="current-num">01</span>
+              <span class="total-num">/ 05</span>
+            </div>
+            <div class="hero-progress-line">
+              <div class="hero-progress-fill"></div>
+            </div>
+          </div>
+
+          <!-- Mouse Scroll Indicator -->
+          <div class="hero-scroll-indicator">
+            <span class="scroll-text">SCROLL TO EXPERIENCE</span>
+            <div class="scroll-mouse">
+              <div class="scroll-wheel"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. FEATURED MODELS SECTION -->
+    <section class="section-padding" id="models">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow">SUPER SPORTS CARS</div>
+            <h2 class="section-title">FEATURED MODELS</h2>
+          </div>
+          <a href="models.html" class="btn-secondary">VIEW ALL MODELS &rarr;</a>
+        </div>
+
+        <div class="models-grid">
+          <!-- Card 1 -->
+          <article class="model-card reveal delay-1">
+            <div class="model-card-img-wrapper">
+              <img src="gallery-images/car-image.png" alt="Lamborghini Revuelto" class="model-card-img" loading="lazy">
+              <div class="model-card-overlay"></div>
+            </div>
+            <div class="model-card-body">
+              <span class="model-tag">V12 HPEV HYBRID</span>
+              <h3 class="model-title">REVUELTO</h3>
+              <p style="font-size: 0.9rem; color: var(--metallic-400);">The new pinnacle of hybrid supercar performance with three electric motors and 8-speed dual-clutch transmission.</p>
+              
+              <div class="model-specs">
+                <div class="spec-item">
+                  <span class="spec-value">1,001 CV</span>
+                  <span class="spec-label">MAX POWER</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-value">2.5 S</span>
+                  <span class="spec-label">0-100 KM/H</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-value">>350 KM/H</span>
+                  <span class="spec-label">TOP SPEED</span>
+                </div>
+              </div>
+
+              <div class="model-card-footer">
+                <a href="models.html" class="link-arrow">EXPLORE MODEL <span>&rarr;</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="model-card reveal delay-2">
+            <div class="model-card-img-wrapper">
+              <img src="gallery-images/Gemini_Generated_Image_3qn7uz3qn7uz3qn7.png" alt="Lamborghini Temerario" class="model-card-img" loading="lazy">
+              <div class="model-card-overlay"></div>
+            </div>
+            <div class="model-card-body">
+              <span class="model-tag">V8 TWIN-TURBO HYBRID</span>
+              <h3 class="model-title">TEMERARIO</h3>
+              <p style="font-size: 0.9rem; color: var(--metallic-400);">Reaching 10,000 RPM with 920 CV combined output, setting a new benchmark for super sports car thrills.</p>
+              
+              <div class="model-specs">
+                <div class="spec-item">
+                  <span class="spec-value">920 CV</span>
+                  <span class="spec-label">MAX POWER</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-value">2.7 S</span>
+                  <span class="spec-label">0-100 KM/H</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-value">343 KM/H</span>
+                  <span class="spec-label">TOP SPEED</span>
+                </div>
+              </div>
+
+              <div class="model-card-footer">
+                <a href="models.html" class="link-arrow">EXPLORE MODEL <span>&rarr;</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="model-card reveal delay-3">
+            <div class="model-card-img-wrapper">
+              <img src="gallery-images/Gemini_Generated_Image_5wcw6t5wcw6t5wcw.png" alt="Lamborghini Urus SE" class="model-card-img" loading="lazy">
+              <div class="model-card-overlay"></div>
+            </div>
+            <div class="model-card-body">
+              <span class="model-tag">PLUG-IN HYBRID SUPER SUV</span>
+              <h3 class="model-title">URUS SE</h3>
+              <p style="font-size: 0.9rem; color: var(--metallic-400);">An unprecedented combination of V8 twin-turbo power, electric torque vectoring, and luxury versatility.</p>
+              
+              <div class="model-specs">
+                <div class="spec-item">
+                  <span class="spec-value">800 CV</span>
+                  <span class="spec-label">MAX POWER</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-value">3.4 S</span>
+                  <span class="spec-label">0-100 KM/H</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-value">312 KM/H</span>
+                  <span class="spec-label">TOP SPEED</span>
+                </div>
+              </div>
+
+              <div class="model-card-footer">
+                <a href="models.html" class="link-arrow">EXPLORE MODEL <span>&rarr;</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PERFORMANCE STATS SECTION -->
+    <section class="performance-section section-padding" id="performance">
+      <div class="performance-bg-glow"></div>
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow">UNRIVALED METRICS</div>
+            <h2 class="section-title">PERFORMANCE BEYOND BOUNDARIES</h2>
+          </div>
+          <p style="max-width: 500px; color: var(--metallic-400);">
+            Combining atmospheric V12/V10 sound with high-density electric drive systems to deliver immediate acceleration and track dominance.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-box reveal delay-1">
+            <div class="stat-number" data-count="1001">1001<span class="stat-unit">CV</span></div>
+            <div class="stat-label">TOTAL HYBRID OUTPUT</div>
+          </div>
+
+          <div class="stat-box reveal delay-2">
+            <div class="stat-number" data-count="2.5" data-decimals="1">2.5<span class="stat-unit">SEC</span></div>
+            <div class="stat-label">0 &rarr; 100 KM/H ACCELERATION</div>
+          </div>
+
+          <div class="stat-box reveal delay-3">
+            <div class="stat-number" data-count="350">350<span class="stat-unit">KM/H</span></div>
+            <div class="stat-label">ELECTRONICALLY TOP SPEED</div>
+          </div>
+
+          <div class="stat-box reveal delay-4">
+            <div class="stat-number" data-count="10000">10000<span class="stat-unit">RPM</span></div>
+            <div class="stat-label">MAX ENGINE REVOLUTIONS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TECHNOLOGY & CRAFTSMANSHIP SECTION -->
+    <section class="section-padding" id="technology">
+      <div class="container">
+        <div class="feature-split">
+          <div class="feature-img-box reveal reveal-left">
+            <img src="gallery-images/Gemini_Generated_Image_dci7e0dci7e0dci7.png" alt="Carbon Fiber Cockpit Technology" loading="lazy">
+          </div>
+          <div class="reveal reveal-right">
+            <div class="eyebrow">AERODYNAMICS & ELECTRONICS</div>
+            <h2 class="section-title">MONOFUSELAGE & LDVI 2.0</h2>
+            <p style="margin-bottom: 20px; color: var(--metallic-400);">
+              The aviation-inspired monofuselage chassis is constructed entirely of ultra-lightweight Forged Composites®, increasing torsional stiffness by +25% while lowering vehicle mass.
+            </p>
+
+            <div class="tech-list">
+              <div class="tech-item">
+                <div class="tech-icon">01</div>
+                <div>
+                  <h3 class="tech-item-title">TRI-MOTOR HYBRID POWERTRAIN</h3>
+                  <p style="font-size: 0.85rem; color: var(--metallic-500);">Two electric motors on the front axle and one integrated into the 8-speed gearbox provide active torque vectoring.</p>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-icon">02</div>
+                <div>
+                  <h3 class="tech-item-title">ACTIVE AERODYNAMIC ALA 2.0</h3>
+                  <p style="font-size: 0.85rem; color: var(--metallic-500);">Real-time aerodynamic downforce management increases high-speed cornering grip by +61% over previous generations.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+              <a href="technology.html" class="btn-primary">EXPLORE TECHNOLOGY <span class="btn-arrow">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FULL-WIDTH SHOWCASE BANNER -->
+    <section class="fullwidth-showcase">
+      <img src="gallery-images/Gemini_Generated_Image_6sg25u6sg25u6sg2.png" alt="Sián FKP 37 Hypercar" class="fullwidth-showcase-bg" loading="lazy">
+      <div class="fullwidth-showcase-content reveal reveal-scale">
+        <div class="eyebrow" style="justify-content: center;">LIMITED FEW-OFF SERIES</div>
+        <h2 class="title-large" style="margin-bottom: 20px;">DESIGNED BY WIND</h2>
+        <p style="color: var(--metallic-300); font-size: 1.1rem; margin-bottom: 30px;">
+          Uncompromising aerodynamic lines sculpted to evoke the legendary Countach wedge silhouette while pioneering hybrid supercapacitor technology.
+        </p>
+        <a href="models.html" class="btn-secondary">DISCOVER LIMITED SERIES &rarr;</a>
+      </div>
+    </section>
+
+    <!-- 6. GALLERY PREVIEW SECTION -->
+    <section class="section-padding" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow">EDITORIAL GALLERY</div>
+            <h2 class="section-title">THE ART OF LAMBORGHINI</h2>
+          </div>
+          <a href="gallery.html" class="btn-secondary">OPEN FULL GALLERY &rarr;</a>
+        </div>
+
+        <div id="gallery-grid" class="gallery-grid">
+          <!-- Dynamic items rendered by gallery.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+      <span id="lightbox-close" class="lightbox-close">&times;</span>
+      <div class="lightbox-btn lightbox-prev" id="lightbox-prev">&#10094;</div>
+      <div class="lightbox-btn lightbox-next" id="lightbox-next">&#10095;</div>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="" class="lightbox-img">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- 7. BRAND EXPERIENCE CTA BANNER -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="cta-banner reveal reveal-scale">
+          <div class="eyebrow" style="justify-content: center;">EXCLUSIVE VIP EXPERIENCE</div>
+          <h2 class="section-title" style="margin-bottom: 20px;">CONFIGURE YOUR ICONIC SUPERCAR</h2>
+          <p style="max-width: 600px; margin: 0 auto 36px; color: var(--metallic-400);">
+            Book an exclusive private consultation at Sant'Agata Bolognese or connect with an authorized dealer concierge.
+          </p>
+          <a href="contact.html" class="btn-primary">
+            REQUEST A TEST DRIVE <span class="btn-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Premium Automotive Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="logo.png" alt="Automobili Lamborghini Logo" class="brand-logo-img">
+          </a>
+          <p>Automobili Lamborghini S.p.A. — Via Modena 12, 40019 Sant'Agata Bolognese (BO), Italy. Pure passion, extreme engineering, and Italian craftsmanship.</p>
+
+          <div class="footer-newsletter">
+            <div class="footer-newsletter-title">VIP CONCIERGE NEWSLETTER</div>
+            <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Automobili Lamborghini VIP Newsletter.');">
+              <input type="email" placeholder="Enter your email address" required class="footer-newsletter-input">
+              <button type="submit" class="footer-newsletter-btn">JOIN</button>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">MODELS</h4>
+          <div class="footer-links">
+            <a href="models.html">Revuelto V12 Hybrid</a>
+            <a href="models.html">Temerario V8 Twin-Turbo</a>
+            <a href="models.html">Urus SE Plug-In Hybrid</a>
+            <a href="models.html">Huracán Tecnica</a>
+            <a href="models.html">Countach LPI 800-4</a>
+            <a href="models.html">Sián FKP 37</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">INNOVATION</h4>
+          <div class="footer-links">
+            <a href="performance.html">1,001 CV Powertrain</a>
+            <a href="technology.html">Forged Composites®</a>
+            <a href="technology.html">LDVI 2.0 Aerodynamics</a>
+            <a href="about.html">Ad Personam Atelier</a>
+            <a href="about.html">Squadra Corse GT3</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">COMPANY & MEDIA</h4>
+          <div class="footer-links">
+            <a href="about.html">Sant'Agata Legacy</a>
+            <a href="gallery.html">Photo & Video Gallery</a>
+            <a href="contact.html">Authorized Dealers</a>
+            <a href="contact.html">VIP Test Drive Concierge</a>
+            <a href="contact.html">Careers & Press Room</a>
+          </div>
+
+          <div class="footer-socials">
+            <a href="javascript:void(0)" class="social-icon-btn" title="Instagram">IG</a>
+            <a href="javascript:void(0)" class="social-icon-btn" title="YouTube">YT</a>
+            <a href="javascript:void(0)" class="social-icon-btn" title="X / Twitter">X</a>
+            <a href="javascript:void(0)" class="social-icon-btn" title="LinkedIn">IN</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Automobili Lamborghini S.p.A. All Rights Reserved.</div>
+        <div style="display: flex; align-items: center; gap: 30px;">
+          <a href="contact.html" style="color: inherit;">Privacy Policy</a>
+          <a href="contact.html" style="color: inherit;">Legal Notice</a>
+          <div class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            TOP &uarr;
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

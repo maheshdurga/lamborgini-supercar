@@ -1,0 +1,178 @@
+/* ==========================================================================
+   PREMIUM LAMBORGHINI AUTOMOTIVE WEBSITE - RESPONSIVE STYLES
+   ========================================================================== */
+
+/* Large Desktop (1440px and below) */
+@media (max-width: 1440px) {
+  :root {
+    --container-max: 1280px;
+    --container-padding: 0 32px;
+  }
+}
+
+/* Desktop / Laptop (1280px and below) */
+@media (max-width: 1280px) {
+  .hero-scene {
+    left: 40px;
+  }
+  .hero-controls {
+    right: 40px;
+  }
+  .feature-split {
+    gap: 50px;
+  }
+}
+
+/* Tablet Landscape (1024px and below) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 80px;
+  }
+
+  .nav-menu {
+    display: none; /* Mobile navigation active */
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .hero-scene-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+  }
+
+  .feature-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .feature-split.reverse {
+    direction: ltr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .lightbox-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .lightbox-prev { left: 10px; }
+  .lightbox-next { right: 10px; }
+}
+
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 0 20px;
+  }
+
+  .custom-cursor,
+  .custom-cursor-follower {
+    display: none !important; /* Disable custom cursor on touch/mobile devices */
+  }
+
+  .hero-content-layer {
+    padding: calc(var(--header-height) + 20px) 20px 40px;
+  }
+
+  .hero-scene {
+    left: 20px;
+    right: 20px;
+    max-width: 100%;
+  }
+
+  .hero-controls {
+    bottom: 30px;
+    right: 20px;
+    gap: 20px;
+  }
+
+  .hero-progress-line {
+    width: 100px;
+  }
+
+  .hero-scroll-indicator {
+    display: none;
+  }
+
+  .section-padding {
+    padding: 80px 0;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 2.8rem;
+  }
+
+  .gallery-card.col-4,
+  .gallery-card.col-6,
+  .gallery-card.col-8 {
+    grid-column: span 12;
+    aspect-ratio: 16/10;
+  }
+
+  .cta-banner {
+    padding: 50px 24px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  .brand-logo {
+    font-size: 1.1rem;
+  }
+
+  .hero-scene-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-scene-desc {
+    font-size: 0.95rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .gallery-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 10px 16px;
+    font-size: 0.7rem;
+  }
+}

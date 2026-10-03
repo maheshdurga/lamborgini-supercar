@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Automobili Lamborghini Concierge Service, Book a VIP Test Drive, or Find an Authorized Dealership.">
+  <title>VIP Concierge & Contact | Automobili Lamborghini</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">LAMBORGHINI <span>CONCIERGE</span></div>
+      <div class="preloader-progress-bar">
+        <div class="preloader-progress-fill"></div>
+      </div>
+      <div class="preloader-counter">00%</div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="logo.png" alt="Automobili Lamborghini Logo" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-menu">
+        <a href="models.html" class="nav-link">MODELS</a>
+        <a href="performance.html" class="nav-link">PERFORMANCE</a>
+        <a href="technology.html" class="nav-link">TECHNOLOGY</a>
+        <a href="gallery.html" class="nav-link">GALLERY</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="contact.html" class="nav-link active">CONTACT</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contact.html" class="btn-primary">
+          CONFIGURE <span class="btn-arrow">&rarr;</span>
+        </a>
+        <div class="mobile-toggle" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">HOME</a>
+      <a href="models.html" class="mobile-nav-link">MODELS</a>
+      <a href="performance.html" class="mobile-nav-link">PERFORMANCE</a>
+      <a href="technology.html" class="mobile-nav-link">TECHNOLOGY</a>
+      <a href="gallery.html" class="mobile-nav-link">GALLERY</a>
+      <a href="about.html" class="mobile-nav-link">ABOUT</a>
+      <a href="contact.html" class="mobile-nav-link">CONTACT</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- BANNER CANVAS SCRUB -->
+    <div class="inner-hero-scroll-wrapper">
+      <div class="inner-hero-sticky-container">
+        <canvas id="inner-hero-canvas" class="inner-hero-canvas"></canvas>
+        <div class="inner-hero-overlay"></div>
+        <div class="inner-hero-content reveal reveal-scale">
+          <div class="eyebrow" style="justify-content: center;">PRIVATE CONSULTATION</div>
+          <h1 class="inner-hero-title">VIP CONCIERGE & TEST DRIVE</h1>
+          <p class="inner-hero-subtitle">
+            Connect directly with Automobili Lamborghini headquarters or schedule a private consultation at your nearest authorized dealership.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIP Form & Headquarters Info Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="feature-split">
+
+          <!-- VIP Test Drive Form -->
+          <div class="reveal reveal-left" style="background: var(--bg-dark-card); padding: 40px; border: 1px solid rgba(200, 164, 93, 0.3);">
+            <div class="eyebrow">EXCLUSIVE RESERVATION</div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 30px;">BOOK A PRIVATE CONSULTATION</h2>
+
+            <form onsubmit="event.preventDefault(); alert('Thank you for contacting Automobili Lamborghini VIP Concierge. Our representative will reach out to you shortly.');" style="display: flex; flex-direction: column; gap: 20px;">
+              <div>
+                <label style="font-family: var(--font-heading); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--gold-primary); display: block; margin-bottom: 8px;">FULL NAME</label>
+                <input type="text" required placeholder="Ferruccio Lamborghini" style="width: 100%; padding: 14px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); color: var(--metallic-100); font-family: var(--font-body); outline: none;">
+              </div>
+
+              <div>
+                <label style="font-family: var(--font-heading); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--gold-primary); display: block; margin-bottom: 8px;">EMAIL ADDRESS</label>
+                <input type="email" required placeholder="concierge@lamborghini.com" style="width: 100%; padding: 14px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); color: var(--metallic-100); font-family: var(--font-body); outline: none;">
+              </div>
+
+              <div>
+                <label style="font-family: var(--font-heading); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--gold-primary); display: block; margin-bottom: 8px;">MODEL OF INTEREST</label>
+                <select style="width: 100%; padding: 14px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); color: var(--metallic-100); font-family: var(--font-body); outline: none;">
+                  <option value="revuelto">Revuelto (V12 HPEV Hybrid)</option>
+                  <option value="temerario">Temerario (Twin-Turbo V8 Hybrid)</option>
+                  <option value="urus-se">Urus SE (Plug-In Hybrid Super SUV)</option>
+                  <option value="huracan">Huracán Tecnica</option>
+                  <option value="ad-personam">Ad Personam Atelier Bespoke</option>
+                </select>
+              </div>
+
+              <div>
+                <label style="font-family: var(--font-heading); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--gold-primary); display: block; margin-bottom: 8px;">MESSAGE / SPECIAL REQUESTS</label>
+                <textarea rows="4" placeholder="Specify preferred dealership location, dates, or bespoke customization interest..." style="width: 100%; padding: 14px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); color: var(--metallic-100); font-family: var(--font-body); outline: none; resize: vertical;"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="justify-content: center; margin-top: 10px;">
+                SUBMIT RESERVATION <span class="btn-arrow">&rarr;</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Headquarters Info -->
+          <div class="reveal reveal-right">
+            <div class="eyebrow">HEADQUARTERS & ATELIER</div>
+            <h2 class="section-title">SANT'AGATA BOLOGNESE</h2>
+            <p style="color: var(--metallic-400); margin-bottom: 30px;">
+              Automobili Lamborghini S.p.A. Headquarters, Production Factory, and Museo Automobili Lamborghini are located in the heart of Motor Valley, Italy.
+            </p>
+
+            <div class="tech-list" style="margin-bottom: 40px;">
+              <div class="tech-item">
+                <div class="tech-icon">&gt;</div>
+                <div>
+                  <h3 class="tech-item-title">ADDRESS</h3>
+                  <p style="font-size: 0.85rem; color: var(--metallic-500);">Via Modena 12, 40019 Sant'Agata Bolognese (BO), Italy</p>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-icon">&gt;</div>
+                <div>
+                  <h3 class="tech-item-title">GLOBAL CONCIERGE HOTLINE</h3>
+                  <p style="font-size: 0.85rem; color: var(--metallic-500);">+39 051 9597282 &bull; Toll-Free: 1-800-2-LAMBORGHINI</p>
+                </div>
+              </div>
+
+              <div class="tech-item">
+                <div class="tech-icon">&gt;</div>
+                <div>
+                  <h3 class="tech-item-title">MUSEUM & FACTORY TOURS</h3>
+                  <p style="font-size: 0.85rem; color: var(--metallic-500);">Open Monday &ndash; Sunday: 09:30 AM &ndash; 06:00 PM (Reservation Required)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-img-box">
+              <img src="gallery-images/Gemini_Generated_Image_vh4tf5vh4tf5vh4t.png" alt="Lamborghini Headquarters Motor Valley" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Premium Automotive Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="logo.png" alt="Automobili Lamborghini Logo" class="brand-logo-img">
+          </a>
+          <p>Automobili Lamborghini S.p.A. — Via Modena 12, 40019 Sant'Agata Bolognese (BO), Italy. Pure passion, extreme engineering, and Italian craftsmanship.</p>
+
+          <div class="footer-newsletter">
+            <div class="footer-newsletter-title">VIP CONCIERGE NEWSLETTER</div>
+            <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Automobili Lamborghini VIP Newsletter.');">
+              <input type="email" placeholder="Enter your email address" required class="footer-newsletter-input">
+              <button type="submit" class="footer-newsletter-btn">JOIN</button>
+            </form>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">MODELS</h4>
+          <div class="footer-links">
+            <a href="models.html">Revuelto V12 Hybrid</a>
+            <a href="models.html">Temerario V8 Twin-Turbo</a>
+            <a href="models.html">Urus SE Plug-In Hybrid</a>
+            <a href="models.html">Huracán Tecnica</a>
+            <a href="models.html">Countach LPI 800-4</a>
+            <a href="models.html">Sián FKP 37</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">INNOVATION</h4>
+          <div class="footer-links">
+            <a href="performance.html">1,001 CV Powertrain</a>
+            <a href="technology.html">Forged Composites®</a>
+            <a href="technology.html">LDVI 2.0 Aerodynamics</a>
+            <a href="about.html">Ad Personam Atelier</a>
+            <a href="about.html">Squadra Corse GT3</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">COMPANY & MEDIA</h4>
+          <div class="footer-links">
+            <a href="about.html">Sant'Agata Legacy</a>
+            <a href="gallery.html">Photo & Video Gallery</a>
+            <a href="contact.html">Authorized Dealers</a>
+            <a href="contact.html">VIP Test Drive Concierge</a>
+            <a href="contact.html">Careers & Press Room</a>
+          </div>
+
+          <div class="footer-socials">
+            <a href="javascript:void(0)" class="social-icon-btn" title="Instagram">IG</a>
+            <a href="javascript:void(0)" class="social-icon-btn" title="YouTube">YT</a>
+            <a href="javascript:void(0)" class="social-icon-btn" title="X / Twitter">X</a>
+            <a href="javascript:void(0)" class="social-icon-btn" title="LinkedIn">IN</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Automobili Lamborghini S.p.A. All Rights Reserved.</div>
+        <div style="display: flex; align-items: center; gap: 30px;">
+          <a href="contact.html" style="color: inherit;">Privacy Policy</a>
+          <a href="contact.html" style="color: inherit;">Legal Notice</a>
+          <div class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            TOP &uarr;
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
